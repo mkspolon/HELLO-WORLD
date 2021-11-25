@@ -1,6 +1,7 @@
 adjective = input("Choose a adjective: ")
 place = input("Choose a place: ")
 s_gray = input ("Choose a shade of gray: ")
+
 water = input ("Choose a solid state of water: ")
 food = input ("Choose a food: ")
 food2 = input ("Chose another food or drink: ")
