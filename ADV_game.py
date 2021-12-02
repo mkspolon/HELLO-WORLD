@@ -12,6 +12,7 @@ def answer_input(statement,input_q,a,b,output_string_a,output_string_b):
         
     else:
         print('invalid, you die!')
+        answer_input()
 
 answer_input('Hello',"Are you ready to start? [yes/no]",'yes','no','Lets play!','Goodbye')
 

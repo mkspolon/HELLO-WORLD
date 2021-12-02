@@ -53,8 +53,6 @@ def bear_room():
 
 # monster room
 def monster_room():
-  # some prompts
-  # '\n' is to print the line in a new line
   print("\nNow you entered the room of a monster!")
   print("The monster is sleeping.\nBehind the monster, there is another door. What would you do? (1 or 2)")
   print("1). Go through the door silently.")
@@ -102,20 +100,16 @@ def start():
   # give some prompts.
   print("\nYou are standing in a dark room.")
   print("There is a door to your left and right, which one do you take? (l or r)")
-  
-  # convert the player's input() to lower_case
+
   answer = input(">").lower()
 
   if "l" in answer:
-    # if player typed "left" or "l" lead him to bear_room()
     bear_room()
   elif "r" in answer:
-    # else if player typed "right" or "r" lead him to monster_room()
     monster_room()
   else:
-    # else call game_over() function with the "reason" argument
     game_over(answer+" is not valid")
 
 
-# start the game
+
 start()
